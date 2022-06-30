@@ -1,0 +1,124 @@
+* {
+    margin: 0px;
+    padding: 0px; 
+}
+  
+@font-face {
+    font-family: cookie;
+    src: url(../fonts/Cookie-Regular.ttf); }
+
+.txt__center{
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.backgroundBody{
+    background-image: url(../images/fondo2.jpg);
+    background-size: cover;
+    margin-top: 8rem;
+}
+
+.backgroundCard{
+    background-image: url(../images/Sprinkle.svg);
+}
+
+.font__productCategoria{
+    font-size: 1.5rem;
+    font-family: cookie;
+}
+
+.font__productEspacio{
+    margin-top: 1rem;
+}
+
+.font__productPrecio{
+    margin-top: 1rem;
+    font-weight: bolder;
+}
+
+.img__logo{
+    width: 7rem; 
+}
+
+.img__carro{
+    width: 2rem; 
+}
+
+.img__background{
+    background-color: black;
+    background-image: url(../images/fondoImgPrincipal.jpg);
+    background-size: cover;
+}
+
+.img__bannertxt {
+    width: 2.5rem;
+    vertical-align: middle;
+    margin-bottom: 0.6rem; 
+}
+
+.footer {
+    margin: 1rem;
+    font-size: 0.75rem; 
+}
+
+
+.btnCarro {
+    padding: 1.1em 2em;
+    background: none;
+    border: 2px solid #fff;
+    font-size: 12px;
+    color: #131313;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s;
+    border-radius: 12px;
+    background-color: #f8e29f;
+    font-weight: bolder;
+    box-shadow: 0 2px 0 2px #000;
+}
+
+.btnCarro:before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 120%;
+    background-color: #ffffff;
+    top: 50%;
+    transform: skewX(30deg) translate(-150%, -50%);
+    transition: all 0.5s;
+}
+
+.btnCarro:hover {
+    background-color: black;
+    color: #fff;
+    box-shadow: 0 2px 0 2px #0d3b66;
+}
+
+.btnCarro:hover::before {
+    transform: skewX(30deg) translate(150%, -50%);
+    transition-delay: 0.1s;
+}
+
+.btnCarro:active {
+    transform: scale(0.9);
+}
+
+ul {
+    list-style: none; }
+    ul li {
+      display: inline;
+      padding: 15px; }
+      ul li a {
+        color: whitesmoke;
+        text-decoration: none;
+        font-size: 1.2rem; }
+        ul li a:hover {
+          color: gold;
+          font-weight: bold;
+          text-decoration: dotted;
+          border: gold 5px inset;
+          border-radius: 4px;
+          padding: 10px;
+          transition-duration: 0.4s; }
